@@ -1,0 +1,1 @@
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\x64\Debug\RayTracing_CUDA.exe

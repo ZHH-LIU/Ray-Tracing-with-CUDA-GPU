@@ -1,0 +1,150 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64" -x cu -rdc=true  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\x64\Debug\kernel.cu.obj "D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\kernel.cu" 
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(29): warning #20012-D: __host__ annotation is ignored on a function("hittable") that is explicitly defaulted on its first declaration
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(29): warning #20012-D: __device__ annotation is ignored on a function("hittable") that is explicitly defaulted on its first declaration
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(30): warning #20012-D: __host__ annotation is ignored on a function("~hittable") that is explicitly defaulted on its first declaration
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(30): warning #20012-D: __device__ annotation is ignored on a function("~hittable") that is explicitly defaulted on its first declaration
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable_list.h(20): warning #20012-D: __host__ annotation is ignored on a function("~hittable_list") that is explicitly defaulted on its first declaration
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable_list.h(20): warning #20012-D: __device__ annotation is ignored on a function("~hittable_list") that is explicitly defaulted on its first declaration
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable_list.h(16): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(81): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(85): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(89): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(94): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(94): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(94): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(94): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(94): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(97): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(97): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(98): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(98): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+CUDACOMPILE : warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\aabb.h(36): warning #20011-D: calling a __host__ function("cudaMemcpy") from a __host__ __device__ function("aabb::ToDevice") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(109): warning #20011-D: calling a __host__ function("cudaMemcpy") from a __host__ __device__ function("Material::ToDevice") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\object.h(46): warning #20011-D: calling a __host__ function("cudaMemcpy") from a __host__ __device__ function("object::ToDevice") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable_list.h(16): warning #20011-D: calling a __host__ function("std::vector<    ::object *, ::std::allocator<    ::object *> > ::operator [](unsigned long long)") from a __host__ __device__ function("hittable_list::hittable_list") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable_list.h(56): warning #20011-D: calling a __host__ function("cudaMemcpy") from a __host__ __device__ function("hittable_list::ToDevice") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\camera.h(46): warning #20011-D: calling a __host__ function("cudaMemcpy") from a __host__ __device__ function("camera::ToDevice") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(81): warning #20011-D: calling a __host__ function("std::vector<    ::object *, ::std::allocator<    ::object *> > ::vector(const ::std::vector<    ::object *, ::std::allocator<    ::object *> > &)") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(85): warning #20011-D: calling a __host__ function("std::vector<    ::object *, ::std::allocator<    ::object *> > ::operator [](unsigned long long)") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(89): warning #20011-D: calling a __host__ function("random_int(int, int)") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(94): warning #20011-D: calling a __host__ function("void  ::std::sort<    ::std::_Vector_iterator<    ::std::_Vector_val<    ::std::_Simple_types<    ::object *> > > , bool (*)(const     ::object *, const     ::object *)> (T1, T1, T2)") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(94): warning #20011-D: calling a __host__ function("std::_Vector_iterator<    ::std::_Vector_val<    ::std::_Simple_types<    ::object *> > > ::operator +(long long) const") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(94): warning #20011-D: calling a __host__ function("std::vector<    ::object *, ::std::allocator<    ::object *> > ::begin()") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(94): warning #20011-D: calling a __host__ function("std::_Vector_iterator<    ::std::_Vector_val<    ::std::_Simple_types<    ::object *> > > ::operator +(long long) const") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(94): warning #20011-D: calling a __host__ function("std::vector<    ::object *, ::std::allocator<    ::object *> > ::begin()") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(97): warning #20011-D: calling a __host__ function("std::vector<    ::object *, ::std::allocator<    ::object *> > ::vector(const ::std::vector<    ::object *, ::std::allocator<    ::object *> > &)") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(97): warning #20011-D: calling a __host__ function("std::vector<    ::object *, ::std::allocator<    ::object *> > ::~vector()") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(98): warning #20011-D: calling a __host__ function("std::vector<    ::object *, ::std::allocator<    ::object *> > ::vector(const ::std::vector<    ::object *, ::std::allocator<    ::object *> > &)") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(98): warning #20011-D: calling a __host__ function("std::vector<    ::object *, ::std::allocator<    ::object *> > ::~vector()") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(101): warning #20011-D: calling a __host__ function("bvh_node::ToDevice()") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(102): warning #20011-D: calling a __host__ function("bvh_node::ToDevice()") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(102): warning #20011-D: calling a __host__ function("std::vector<    ::object *, ::std::allocator<    ::object *> > ::~vector()") from a __host__ __device__ function("bvh_node::bvh_node") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\bvh.h(43): warning #20011-D: calling a __host__ function("std::_Iterator_base12::~_Iterator_base12()") from a __host__ __device__ function("std::_Iterator_base12::~_Iterator_base12 [subobject]") is not allowed
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(29): warning #20012-D: __host__ annotation is ignored on a function("hittable") that is explicitly defaulted on its first declaration
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(29): warning #20012-D: __device__ annotation is ignored on a function("hittable") that is explicitly defaulted on its first declaration
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(30): warning #20012-D: __host__ annotation is ignored on a function("~hittable") that is explicitly defaulted on its first declaration
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(30): warning #20012-D: __device__ annotation is ignored on a function("~hittable") that is explicitly defaulted on its first declaration
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable_list.h(20): warning #20012-D: __host__ annotation is ignored on a function("~hittable_list") that is explicitly defaulted on its first declaration
+  
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable_list.h(20): warning #20012-D: __device__ annotation is ignored on a function("~hittable_list") that is explicitly defaulted on its first declaration
+  
+  kernel.cu
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\ray.h(17): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\color.h(13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\color.h(14): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\color.h(15): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\color.h(18): warning C4305: “参数”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\color.h(18): warning C4305: “参数”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\color.h(18): warning C4305: “参数”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\aabb.h(20): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\aabb.h(21): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(44): warning C4244: “参数”: 从“const double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(69): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\hittable.h(75): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(32): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(32): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(32): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(15): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(15): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(15): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(16): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(16): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(16): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(17): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(17): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\scene.h(17): warning C4305: “初始化”: 从“double”到“float”截断
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\camera.h(25): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\camera.h(26): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\camera.h(31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\camera.h(31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\object.h(62): warning C4715: “object::bounding_box”: 不是所有的控件路径都返回值
+D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\object.h(75): warning C4715: “object::hit”: 不是所有的控件路径都返回值
+  
+  D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin\nvcc.exe" -dlink -o x64\Debug\RayTracing_CUDA.device-link.obj -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /Zi /RTC1 /MDd " -L"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin/crt" -L"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\lib\x64" cudadevrt.lib cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib cudart.lib  -gencode=arch=compute_52,code=sm_52 -G --machine 64 D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\x64\Debug\float3.cu.obj D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\x64\Debug\kernel.cu.obj 
+  cudadevrt.lib
+  cudart_static.lib
+  kernel32.lib
+  user32.lib
+  gdi32.lib
+  winspool.lib
+  comdlg32.lib
+  advapi32.lib
+  shell32.lib
+  ole32.lib
+  oleaut32.lib
+  uuid.lib
+  odbc32.lib
+  odbccp32.lib
+  cudart.lib
+  float3.cu.obj
+  kernel.cu.obj
+  RayTracing_CUDA.vcxproj -> D:\Projects\Projects\Ray_CUDA\RayTracing_CUDA\x64\Debug\RayTracing_CUDA.exe
